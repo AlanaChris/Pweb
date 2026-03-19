@@ -1,0 +1,41 @@
+/* as cores foram colocadas em unidade
+diferentes propositalmente */
+
+body {
+    font-family: "Segeon UI", Tahoma;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 15px;
+/* espaço entre os cards */
+}
+
+.card{
+    /*tamanho inicial do item*/
+    flex-basis: calc(100% / 3 - 20px);
+    background-color: HLS(230, 42%, 43%);
+    color:blue;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px, 5px 2 px rgba(125, 6, 6, 0.2),
+        5px 5px 10px 5px #187b8d;
+
+    height: 200px;
+  
+}
+
+.card h2{
+    margin-top: 0;
+}
+
+.card p{
+    margin-top: 10 px 0;
+}
