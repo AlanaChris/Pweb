@@ -1,0 +1,223 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #3d0c7c;
+            color: #2d0045;
+            line-height: 1.5;
+            padding: 2rem;
+        }
+
+        /* Container principal para simular o layout da imagem */
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: rgb(204, 173, 255);
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .hero {
+            background-color: #2d0045;
+            background-image: linear-gradient(135deg, #290f3e 0%, #1a2632 100%);
+            padding: 3rem 2rem;
+            text-align: center;
+            color: white;
+            border-bottom: 4px solid #2d0045;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero .subtitle {
+            font-size: 1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .info-section {
+            background-color: #fff;
+            border-bottom: 1px solid #eaeaea;
+            padding: 1.5rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+
+        .info-block {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .info-block h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2d0045;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.75rem;
+            border-left: 3px solid #2d0045;
+            padding-left: 0.75rem;
+        }
+
+        .info-block p {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-block a {
+            color: #2d0045;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .info-block a:hover {
+            text-decoration: underline;
+        }
+
+        .music-title {
+            padding: 1.5rem 2rem 0.5rem 2rem;
+            background-color: white;
+        }
+
+        .music-title h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #392c50;
+            border-left: 4px solid #2d0045;
+            padding-left: 1rem;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 1.5rem 2rem 2rem 2rem;
+            background-color: white;
+        }
+
+        .card {
+            background-color: #fafafa;
+            border-radius: 16px;
+            padding: 1.25rem;
+            transition: all 0.2s ease;
+            border: 1px solid #eee;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            border-color: #e0e0e0;
+        }
+
+        .card h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            border-left: 3px solid #2d0045;
+            padding-left: 0.6rem;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 0.5rem 0;
+        }
+
+        .card .link-label {
+            margin-top: 0.75rem;
+            font-size: 0.8rem;
+            color: #888;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .card a {
+            display: inline-block;
+            word-break: break-all;
+            font-size: 0.85rem;
+            color: #2d0045;
+            text-decoration: none;
+            background-color:  #ded2fb;
+            padding: 0.2rem 0.5rem;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+
+        .card a:hover {
+            background-color: #ded2fb;
+            text-decoration: underline;
+        }
+
+        /* Rodapé estilo "Parque Tecnológico" */
+        .footer-note {
+            background-color: #f8f9fa;
+            border-top: 1px solid #eaeaea;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 0;
+        }
+
+        .footer-note p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .footer-note a {
+            color: #2d0045;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer-note a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+            .info-section {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .cards-grid {
+                padding: 1rem;
+            }
+            .music-title {
+                padding: 1rem 1rem 0 1rem;
+            }
+            .footer-note {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+.card p{
+    margin-top: 10 px 0;
+}
