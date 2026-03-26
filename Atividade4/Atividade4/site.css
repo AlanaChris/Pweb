@@ -1,0 +1,50 @@
+body {
+    padding: 10px;
+    align-items: center;
+}
+
+.container-box {
+    display: grid; 
+    grid-gap: 20px;
+    grid-template-columns:auto;
+    grid-template-rows: 150px 200px 200px; /* 3 linhas, tamanho de cada*/
+
+    grid-template-areas: 
+    'b a c'
+    'b d d'
+    'b e e';
+}
+
+.box {
+    background-color: rgb(120, 132, 255);
+    border-radius: 5px;
+    
+}
+ 
+/*definindo que a area da classe a deve ficar
+o grid formado pela classe a*/
+
+.a{
+    grid-area: a;
+    text-align: left;
+}
+
+.b{
+    grid-area: b;
+    text-align: center;
+}
+
+.c{
+    grid-area: c;
+    text-align: center;
+}
+
+.d{
+    grid-area: d;
+    text-align: center;
+}
+
+.e{
+    grid-area: e;
+    text-align: center;
+}
